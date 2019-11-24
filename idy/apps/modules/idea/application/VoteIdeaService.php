@@ -21,6 +21,7 @@ class VoteIdeaService
         $idea->vote();
 
         $this->ideaRepository->update($idea);
+        return VoteIdeaResponse('Idea has been voted');
     }
 
 }

@@ -23,6 +23,8 @@ class CreateNewIdeaService
         $idea = new Idea(null, $request->ideaTitle, $request->ideaDescription, $author);
 
         $this->ideaRepository->save($idea);
+
+        return CreateNewIdeaResponse('Idea has been created.');
     }
 
 }

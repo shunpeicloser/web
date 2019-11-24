@@ -21,6 +21,8 @@ class RateIdeaService
         $idea->addRating($request->user, $request->ideaRatingValue);
 
         $this->ideaRepository->update($idea);
+    
+        return RateIdeaResponse('Idea has been rated.');
     }
 
 }

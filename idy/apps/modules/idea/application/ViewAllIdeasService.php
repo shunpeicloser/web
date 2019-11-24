@@ -16,7 +16,7 @@ class ViewAllIdeaService
 
     public function execute(RateIdeaRequest $request)
     {
-        return $this->ideaRepository->allIdeas();
+        return ViewAllIdeasResponse($this->ideaRepository->allIdeas());
     }
 
 }
