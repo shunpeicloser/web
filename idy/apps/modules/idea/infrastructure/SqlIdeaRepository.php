@@ -21,6 +21,11 @@ class SqlIdeaRepository implements IdeaRepository
 
     }
 
+    public function update(Idea $idea)
+    {
+        
+    }
+
     public function allIdeas()
     {
 
