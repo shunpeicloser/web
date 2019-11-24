@@ -4,7 +4,7 @@ namespace Idy\Idea\Application;
 
 use Idy\Idea\Domain\Model\IdeaRepository;
 
-class ViewAllIdeaService
+class ViewAllIdeasService
 {
     private $ideaRepository;
 
@@ -14,9 +14,9 @@ class ViewAllIdeaService
         $this->ideaRepository = $ideaRepository;
     }
 
-    public function execute(RateIdeaRequest $request)
+    public function execute()
     {
-        return ViewAllIdeasResponse($this->ideaRepository->allIdeas());
+        return new ViewAllIdeasResponse($this->ideaRepository->allIdeas());
     }
 
 }

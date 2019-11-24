@@ -2,6 +2,10 @@
 
 namespace Idy\Idea\Infrastructure;
 
+use Idy\Idea\Domain\Model\Idea;
+use Idy\Idea\Domain\Model\IdeaId;
+use Idy\Idea\Domain\Model\IdeaRepository;
+
 class SqlIdeaRepository implements IdeaRepository
 {
     private $ideas;

@@ -2,7 +2,7 @@
 
 namespace Idy\Idea\Application;
 
-class ViewAllIdeaResponse
+class ViewAllIdeasResponse
 {
     public $ideas;
 
